@@ -53,7 +53,6 @@ def matrix_mul(m_a, m_b):
             ent.append(a)
             L_index += 1
             index = 0
-            count = 0
         result.append(ent)
         M_index += 1
     return result
