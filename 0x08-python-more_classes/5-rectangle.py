@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-This module defines a class - Rectangle.
-"""
+"""Defines a Rectangle class."""
 
 
 class Rectangle:
@@ -72,6 +70,6 @@ class Rectangle:
         rect += ", " + str(self.__height) + ")"
         return (rect)
 
-   def __del__(self):
+    def __del__(self):
         """Print a message for every deletion of a Rectangle."""
-        print("Bye rectangle...") 
+        print("Bye rectangle...")

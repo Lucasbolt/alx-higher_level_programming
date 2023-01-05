@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-This module defines a class - Rectangle.
-"""
+"""Defines a Rectangle class."""
 
 
 class Rectangle:
@@ -40,4 +38,4 @@ class Rectangle:
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
-        self.__height = value    @property
+        self.__height = value
