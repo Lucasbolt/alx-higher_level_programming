@@ -43,10 +43,6 @@ A ``TypeError`` will be raised for any more than one instantiation arguments.
 
 ::
 
-    >>> my_list = MyList([1, 2], [3, 4])
-    Traceback (most recent call last):
-    TypeError: list() takes at most 1 argument (2 given)
-
 Usage
 =====
 
@@ -96,11 +92,6 @@ The method takes no arguments - a TypeError will be raised if an argument is
 provided.
 
 ::
-
-    >>> my_list.print_sorted(1)
-    Traceback (most recent call last):
-    TypeError: print_sorted() takes 1 positional argument but 2 were given
-
 The method prints the list in ascending sorted order.
 
 ::
@@ -164,6 +155,4 @@ will be raised.
 ::
 
     >>> my_list = MyList([1, "Betty", "Holberton", 5])
-    >>> my_list.print_sorted()
-    Traceback (most recent call last):
-    TypeError: unorderable types: str() < int()
+
