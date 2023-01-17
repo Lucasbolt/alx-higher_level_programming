@@ -295,7 +295,7 @@ class TestRectangle_x(unittest.TestCase):
             Rectangle(1, 2, (1, 2, 3), 2)
 
     def test_frozenset_x(self):
-        with self.assertRaiesRegex(TypeError, "x must be an integer"):
+        with self.assertRaisesRegex(TypeError, "x must be an integer"):
             Rectangle(1, 2, frozenset({1, 2, 3, 1}))
 
     def test_range_x(self):
