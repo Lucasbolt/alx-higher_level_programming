@@ -71,6 +71,7 @@ class Rectangle(Base):
     @property
     def y(self):
         """get/set y cordinate of a rectangle."""
+        return self.__y
 
     @y.setter
     def y(self, val):
@@ -144,3 +145,13 @@ class Rectangle(Base):
             [print(" ", end="") for x in range(self.x)]
             [print("#", end="") for w in range(self.width)]
             print("")
+
+    def to_dictionary(self):
+        """Return the dictionary representation of a Rectangle."""
+        return {
+            "id": self.id,
+            "width": self.width,
+            "height": self.height,
+            "x": self.x,
+            "y": self.y
+        }
