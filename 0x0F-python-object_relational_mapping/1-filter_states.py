@@ -12,7 +12,7 @@ if __name__ == "__main__":
             passwd=sys.argv[2],
             db=sys.argv[3])
     c = db.cursor()
-    c.execute("SELECT * FROM `states` WHERE REGEXP '^N' ORDER BY `id`")
+    c.execute("SELECT * FROM `states` WHERE name REGEXP '^N' ORDER BY `id`")
     [print(state) for state in c.fetchall()]
     c.close()
     db.close()
