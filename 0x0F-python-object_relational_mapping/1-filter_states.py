@@ -15,6 +15,7 @@ if __name__ == "__main__":
             db=sys.argv[3])
     c = db.cursor()
     c.execute("SELECT * FROM `states` WHERE name REGEXP '^N' ORDER BY `id`")
-    [print(state) for state in c.fetchall()]
+    for state in c.fetchall():
+        print(state)
     c.close()
     db.close()
